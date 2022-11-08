@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body, #wrapper {
+    height: 100%;
+}
+
+.dark-line > .copy-right {
+    text-align: center;
+}
+
+.dark-line {
+    text-align: center;
+    color: white;
+    padding: 0.5em 0;
+    background: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+}
+
+#wrapper {
+    display: grid;
+    grid-template-areas: "h" "m" "f";
+    grid-template-rows: auto 1fr auto;
+}
+
+.as-bg-rgba-dark {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+header {
+    grid-area: h;
+}
+
+main {
+    grid-area: m;
+}
+
+footer {
+    grid-area: f;
+}
+
+main #view {
+    max-width: 1000px;
+    margin: 64px auto 0 auto;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 20px;
+}
+
+.menu-active {
+    background: rgba(0, 0, 0, 0.5);
+    color: white !important;
+}
+
+/*.nav-item > a.menu-active:focus, */
+.nav-item > a.menu-active:hover {
+    color: white !important;
+    text-shadow: 0px 0px 5px white !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+}
+
+.cmd-group {
+    float: right;
+}
+
+.btns {
+    background: rgba(0, 0, 0, 0.5);
+    color: wheat;
+    padding: 0 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btns:hover {
+    text-shadow: 0px 0px 3px white;
+    color: white;
+}
+
+.btn-row-update {
+    width: 100%;
+}
+
+#data-read {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+}
+
+.row {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    margin-bottom: 20px;
+    display: block;
+    overflow: hidden;
+}
+
+[id^="edit-row-"] {
+    display: none;
+    width: 100%;
+}
+
+.row button {
+    background: rgba(0, 0, 0, 0);
+    color: darkgray;
+    padding: 1px 5px;
+}
+
+.row-new-form {
+    display: none;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row-new-form input,
+.row-new-form textarea {
+    width: 100%;
+}
+
+.row-new-form textarea {
+    min-height: 100px;
+    padding: 5px 10px;
+}
+
+.row-new-form input {
+    padding: 5px 10px;
+}
+
+.text-wheat {
+    color: wheat;
+}
+
+.text-error {
+    color: red;
+}
+
+#black-line-contact{
+    float: left;
+}
+
+a.text-wheat:focus, a.text-wheat:hover {
+    text-shadow: 0px 0px 5px wheat;
+    color: wheat;
+}
+
+.top-view {
+    float: right;
+    /*padding: 0.43em 2em;*/
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: white;
+}
+
+.black-line {
+    background: black;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+.username {
+    display: initial;
+    cursor: pointer;
+    color: wheat;
+}
+
+.username > div {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.navbar {
+    padding: 0;
+}
+
+[name^='row_description_'] {
+    /*width: 100%;*/
+}
+
+.input-text-edit {
+    background: rgba(0, 0, 0, 0.3);
+    color: lightgray;
+    width: 100%;
+}
+
+.rows-info-success {
+    background: rgba(255, 255, 255, 0.9);
+    color: green !important;
+}
+
+.rows-info-error {
+    background: rgba(255, 0, 0, 0.9);
+}
+
+#rows-info {
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    border: solid black 5px;
+    border-radius: 5px;
+    display: none;
+    padding: 10px;
+    color: white;
+    position: fixed;
+    margin-top: 100px;
+    z-index: 1030;
+}
+
+[id^='row-title-'] {
+}
+
+[id^='row-description-'] {
+}
+
+.rows-show-all {
+    cursor: pointer;
+}
+
+
+.hr-light {
+    background: darkgray;
+    height: 2px;
+    margin: 0;
+}
+
+/*bootstrap overwrite*/
+.modal-content {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.login {
+    width: 100px;
+    /*float: left;*/
+    padding: 0 10px;
+}
+
+.theme-style {
+    width: 100px;
+    float: right;
+    padding: 0 10px;
+}
+
+#choice-login {
+    color: white;
+}
+
+#choice-registration {
+    color: gray;
+}
+
+.login-modal-title:hover {
+    text-shadow: 0 0 5px;
+}
+
+.login-modal-title {
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+#btn-login-close {
+    display: none;
+}
+
+.close {
+    color: white;
+}
+
+.close:hover span {
+    color: white;
+}
+
+#btn-registration,
+#btn-login-check {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#modal-registration-form,
+#btn-registration {
+    display: none;
+}
+
+.modal-body > div > input {
+    width: 100%;
+    padding: 3px 7px;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.spinner-border {
+    display: none;
+}
+
+.login-message,
+.registration-message {
+    padding-top: 10px;
+    display: none;
+}
+
+#navbarNav .navbar-nav .nav-link {
+    padding: 0.5rem 1rem;
+}
+
+.control-panel{
+    text-align: center;
+}
+
+@media (min-width: 993px) {
+
+}
+
+@media (max-width: 992px) {
+
+    .as-bg-rgba-dark {
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    #rows-info {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    #menu-top-mobile-icon {
+        display: block;
+        width: 50px;
+        float: left;
+        padding: 0 5px;
+        background: rgba(0, 0, 0, 0.3);
+    }
+
+    #menu-top-mobile-icon hr {
+        height: 2px;
+        color: wheat;
+        background: wheat;
+        border-radius: 10px;
+        padding: 0px;
+        margin: 8px 0;
+    }
+
+    .navbar-toggler {
+        padding: 0;
+        border: 0;
+    }
+
+    .navbar-nav .nav-link {
+        text-align: right;
+    }
+
+    .as-bg-rgba-dark {
+        padding: 0 10px;
+    }
+
+}
